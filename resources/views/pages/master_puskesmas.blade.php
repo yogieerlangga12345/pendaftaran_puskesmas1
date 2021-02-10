@@ -77,7 +77,10 @@
                     <input type="text" class="form-control" name="alamat_puskesmas" id="alamat_puskesmas" required >
 
                     <label class="form-group">No telp</label>
-                    <input type="number" class="form-control" name="no_telp" id="no_telp" required >
+                   <!--  <input type="number" class="form-control" name="no_telp" id="no_telp" required > -->
+                   <input type="text" class="form-control" name="no_telp" id="no_telp" maxlength="15"
+                                oninput="this.value = this.value.replace(/[^0-9+]/g, '').replace(/(\..*)\./g, '$1');"
+                                required>
                         
             </div>
             <div class="modal-footer justify-content-between">
@@ -109,7 +112,10 @@
                     <input type="text" class="form-control" name="alamat_puskesmas" id="update_alamat_puskesmas" required >
 
                     <label class="form-group">No telp</label>
-                    <input type="number" class="form-control" name="no_telp" id="update_no_telp" required >
+                    <!-- <input type="number" class="form-control" name="no_telp" id="update_no_telp" required > -->
+                    <input type="text" class="form-control" name="no_telp" id="update_no_telp" maxlength="15"
+                                oninput="this.value = this.value.replace(/[^0-9+]/g, '').replace(/(\..*)\./g, '$1');"
+                                required>
                         
             </div>
             <div class="modal-footer justify-content-between">

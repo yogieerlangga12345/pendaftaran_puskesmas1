@@ -81,8 +81,10 @@
                     <input type="text" class="form-control" name="password" id="password" required >
 
                     <label class="form-group">no telp</label>
-                    <input type="text" class="form-control" name="nmr_telp" id="nmr_telp" required >
-                        
+                    <!-- <input type="text" class="form-control" name="nmr_telp" id="nmr_telp" required > -->
+                    <input type="text" class="form-control" name="nmr_telp" id="nmr_telp" maxlength="15"
+                                oninput="this.value = this.value.replace(/[^0-9+]/g, '').replace(/(\..*)\./g, '$1');"
+                                required>
             </div>
             <div class="modal-footer justify-content-between">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -116,7 +118,9 @@
                     <input type="text" class="form-control" name="password" id="update_password" required >
 
                     <label class="form-group">no telp</label>
-                    <input type="text" class="form-control" name="nmr_telp" id="update_nmr_telp" required >
+                    <input type="text" class="form-control" name="nmr_telp" id="update_nmr_telp" maxlength="15"
+                                oninput="this.value = this.value.replace(/[^0-9+]/g, '').replace(/(\..*)\./g, '$1');"
+                                required>
                         
             </div>
             <div class="modal-footer justify-content-between">

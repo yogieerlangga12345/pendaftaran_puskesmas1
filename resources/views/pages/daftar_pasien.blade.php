@@ -61,7 +61,10 @@
           <div class="form-group row">
             <label for="inputNoTelpon3" class="col-sm-2 col-form-label">No Telepon</label>
             <div class="col-sm-10">
-              <input type="number" class="form-control" id="inputNoTelpon3" placeholder="NoTelpon" value="{{session('nmr_telp')}}" readonly required>
+            <!--   <input type="number" class="form-control" id="inputNoTelpon3" placeholder="NoTelpon" value="{{session('nmr_telp')}}" readonly required> -->
+            <input type="text" class="form-control" name="telp_ortu" value="{{session('nmr_telp')}}" id="inputNoTelpon3" maxlength="15"
+                                oninput="this.value = this.value.replace(/[^0-9+]/g, '').replace(/(\..*)\./g, '$1');"
+                                required readonly>
             </div>
           </div>
            <div class="form-group row">

@@ -42,7 +42,7 @@
             <br>
             <tr>
                 <td>Tanggal Berobat</td>
-                <td>: {{\Carbon\Carbon::parse($p->tanggal)->isoFormat('dddd, DD / MMMM / YYYY')}}</td>
+                <td>: {{\Carbon\Carbon::parse($p->tanggal)->isoFormat('dddd, DD / MMM / YYYY')}}</td>
             </tr>
             <tr>
                 <td>Dokter</td>

@@ -56,7 +56,7 @@
             </tr>
             <tr>
                 <td>Tanggal Lahir</td>
-                <td>: {{\Carbon\Carbon::parse($p->tanggal_lahir)->isoFormat('dddd, DD / MMMM / YYYY')}}</td>
+                <td>: {{\Carbon\Carbon::parse($p->tanggal_lahir)->isoFormat('dddd, DD / MMM / YYYY')}}</td>
             </tr>
             <tr>
                 <td>Nama Dokter</td>
@@ -68,7 +68,7 @@
             </tr>
             <tr>
                 <td>Tanggal Berobat</td>
-                <td>: {{\Carbon\Carbon::parse($p->tanggal)->isoFormat('dddd, DD / MMMM / YYYY')}}</td>
+                <td>: {{\Carbon\Carbon::parse($p->tanggal)->isoFormat('dddd, DD / MMM / YYYY')}}</td>
             </tr>
              <tr>
                 <td>Keluhan Sakit</td>
@@ -93,7 +93,7 @@
             <tr>
                 <td width="50%"></td>
                 <td width="50%">
-                    {{\Carbon\Carbon::parse($p->tanggal)->isoFormat('dddd, DD / MMMM / YYYY')}}
+                    {{\Carbon\Carbon::parse($p->tanggal)->isoFormat('dddd, DD / MMM / YYYY')}}
                 </td>
             </tr>
             <tr>
@@ -103,7 +103,7 @@
                 </td>
                 <td>
                     <br><br><br><br><br><b>{{$p->nama_dokter}}</b>
-                    <hr style="border-top: 2px solid black;">FR/PUSK{{$p->id_daftar}},{{\Carbon\Carbon::parse($p->tanggal)->isoFormat('DD/MMMM/gggg')}}
+                    <hr style="border-top: 2px solid black;">FR/PUSK{{$p->id_daftar}},{{\Carbon\Carbon::parse($p->tanggal)->isoFormat('DD/MMM/gggg')}}
                     <br>
                 </td>
             </tr>

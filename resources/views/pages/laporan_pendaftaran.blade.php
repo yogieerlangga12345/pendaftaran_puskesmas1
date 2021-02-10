@@ -48,7 +48,7 @@
                        <td>{{$laporan->nama_dokter}}</td>
                        <td>{{$laporan->spesialis}}</td>
                        <td>{{$laporan->ruang_praktek}}</td>
-                       <td>{{$laporan->tanggal}}</td>
+                       <td>{{\Carbon\Carbon::parse($laporan->tanggal)->isoFormat('DD MMM YYYY')}}</td>
                        <td> 
                         <button class="btn btn-warning btn-sm" onclick="report_proses({{$laporan->id_daftar}})">
                                 <i class="fas fa-eye">

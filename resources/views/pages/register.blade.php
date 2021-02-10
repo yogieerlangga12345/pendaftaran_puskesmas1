@@ -50,7 +50,10 @@
             </div>
           </div>
           <div class="input-group mb-3">
-            <input type="number" class="form-control" placeholder="No Telepon" id="nmr_telp" name="nmr_telp">
+           <!--  <input type="number" class="form-control" placeholder="No Telepon" id="nmr_telp" name="nmr_telp"> -->
+           <input type="text" class="form-control" name="nmr_telp" id="nmr_telp" placeholder="nomor telp (+62)" maxlength="15"
+                                oninput="this.value = this.value.replace(/[^0-9+]/g, '').replace(/(\..*)\./g, '$1');"
+                                required>
             <div class="input-group-append">
               <div class="input-group-text">
                 <span class="fas fa-lock"></span>

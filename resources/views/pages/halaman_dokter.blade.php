@@ -52,7 +52,7 @@
                        <td>{{$laporan->nmr_antrian}}</td>
                        <td>{{$laporan->jam_masuk}} - {{$laporan->jam_pulang}}</td>
                        <td>{{$laporan->ruang_praktek}}</td>
-                       <td>{{$laporan->tanggal}}</td>
+                       <td>{{\Carbon\Carbon::parse($laporan->tanggal)->isoFormat('DD MMM YYYY')}}</td>
                        <td> 
                            @if($laporan->status == 1)
                          <button class="btn btn-success btn-sm" data-toggle="modal" data-target="#UpdateDiagnosa" onclick="$('#update_id_daftar').val({{$laporan->id_daftar}})">

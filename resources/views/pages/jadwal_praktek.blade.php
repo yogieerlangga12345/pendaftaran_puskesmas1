@@ -38,7 +38,7 @@
                        <td>{{$jadwal->spesialis}}</td>
                        <td>{{$jadwal->hari}}</td>
                        <td>{{$jadwal->ruang_praktek}}</td>
-                       <td>{{$jadwal->tanggal}}</td>
+                       <td>{{\Carbon\Carbon::parse($jadwal->tanggal)->isoFormat('DD MMM YYYY')}}</td>
                        <td>{{$jadwal->jam_masuk}} - {{$jadwal->jam_pulang}} </td>
                        <td> <button class="btn btn-info btn-sm" data-toggle="modal" data-target="#Updatejadwaldokter" onclick="get_data({{$jadwal->id_jadwal}})">
                                 <i class="fas fa-pencil-alt">

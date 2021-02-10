@@ -124,7 +124,7 @@
                            <td>{{$laporan1->nmr_antrian}}</td>
                            <td>{{$laporan1->jam_masuk}} - {{$laporan1->jam_pulang}}</td>
                            <td>{{$laporan1->ruang_praktek}}</td>
-                           <td>{{$laporan1->tanggal}}</td>
+                           <td>{{\Carbon\Carbon::parse($laporan1->tanggal)->isoFormat('DD MMM YYYY')}}</td>
                               
                            </tr>
                           
